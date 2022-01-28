@@ -1,1 +1,1 @@
-[link][link]
+[link][some-page.html]
