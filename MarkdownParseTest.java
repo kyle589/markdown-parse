@@ -6,7 +6,8 @@ import static org.junit.Assert.*;
 import org.junit.*;
 //javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java
 //java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
-//something
+//scp -r . cs15lwi22akq@ieng6.ucsd.edu:~/markdown-parse; ssh cs15lwi22akq@ieng6.ucsd.edu "cd markdown-parse; javac MarkdownParse.java; java MarkdownParse test-file.md"
+//ssh cs15lwi22akq@ieng6.ucsd.edu "cd markdown-parse && javac MarkdownParse.java"
 public class MarkdownParseTest {
     @Test
     public void addition() {
