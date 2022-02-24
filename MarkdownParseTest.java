@@ -12,10 +12,6 @@ import org.junit.*;
 //scp -r . cs15lwi22akq@ieng6.ucsd.edu:~/markdown-parse; ssh cs15lwi22akq@ieng6.ucsd.edu "cd markdown-parse; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/javac MarkdownParse.java; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
 public class MarkdownParseTest {
     @Test
-    public void addition() {
-        assertEquals(2, 1 + 1);
-    }
-    @Test
     public void getLinksTestFile() throws IOException{
         Path fileName = Path.of("test-file.md");
         String contents = Files.readString(fileName);
