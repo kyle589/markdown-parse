@@ -47,10 +47,10 @@ public class MarkdownParseTest {
         String contents = Files.readString(fileName);
         assertEquals(List.of("a.com", "a.com(())", "example.com"), MarkdownParse.getLinks(contents));
     }
-    // @Test
-    // public void getLinksSnippet3() throws IOException{
-    //     Path fileName = Path.of("snippet3.md");
-    //     String contents = Files.readString(fileName);
-    //     assertEquals(List.of("https://ucsd-cse15l-w22.github.io/"), MarkdownParse.getLinks(contents));
-    // }
+    @Test
+    public void getLinksSnippet3() throws IOException{
+        Path fileName = Path.of("snippet3.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of("https://ucsd-cse15l-w22.github.io/"), MarkdownParse.getLinks(contents));
+    }
 }
